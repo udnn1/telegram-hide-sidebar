@@ -4,13 +4,13 @@
 
 **Chowaj listę czatów jednym kliknięciem i czytaj Telegram na pełną szerokość.**
 
-[![Wersja](https://img.shields.io/badge/wersja-3.4.0-3390ec?style=flat-square)](https://github.com/udnn1/telegram-hide-sidebar/releases)
-[![Licencja](https://img.shields.io/github/license/udnn1/telegram-hide-sidebar?style=flat-square&color=brightgreen)](LICENSE)
-[![Tampermonkey](https://img.shields.io/badge/Tampermonkey-wymagany-00485b?style=flat-square)](https://www.tampermonkey.net/)
-[![Telegram Web](https://img.shields.io/badge/Telegram_Web-A-229ED9?style=flat-square&logo=telegram&logoColor=white)](https://web.telegram.org/a/)
-[![Ostatni commit](https://img.shields.io/github/last-commit/udnn1/telegram-hide-sidebar?style=flat-square)](https://github.com/udnn1/telegram-hide-sidebar/commits/main)
+[![Wersja](https://img.shields.io/badge/wersja-3.4.0-3390EC?style=for-the-badge)](https://github.com/udnn1/telegram-hide-sidebar/releases)
+[![Tampermonkey](https://img.shields.io/badge/Tampermonkey-00485B?style=for-the-badge&logo=tampermonkey&logoColor=white)](https://www.tampermonkey.net/)
+[![Telegram Web A](https://img.shields.io/badge/Telegram_Web_A-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://web.telegram.org/a/)
+[![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://www.mozilla.org/firefox/)
+[![Licencja MIT](https://img.shields.io/badge/Licencja-MIT-3DA639?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 
-[Instalacja](#instalacja) · [Użycie](#użycie) · [FAQ](#faq)
+[Instalacja](#instalacja) · [Użycie](#użycie)
 
 </div>
 
@@ -57,17 +57,6 @@ Uchwyt to cienki pionowy pasek wyśrodkowany w pionie. Na najechanie kursorem po
 - ✅ Telegram Web **A** (`web.telegram.org/a/`)
 - ✅ Firefox + Tampermonkey (testowane)
 - ❌ Telegram Web **K** (`web.telegram.org/k/`) - nieobsługiwane
-
-## FAQ
-
-**Skrypt przestał działać po aktualizacji Telegrama.**
-Telegram czasem zmienia nazwy klas i identyfikatorów w DOM. Zgłoś to w [Issues](https://github.com/udnn1/telegram-hide-sidebar/issues).
-
-**Nie widzę uchwytu.**
-Upewnij się, że jesteś na wersji A (`/a/` w adresie) i że Tampermonkey jest włączony.
-
-**Czy zbiera jakieś dane?**
-Nie. Skrypt działa wyłącznie lokalnie, nie wysyła niczego na zewnątrz. Jedyny zapis to `localStorage` z informacją, czy lista ma być schowana.
 
 ## Licencja
 
