@@ -21,11 +21,10 @@ Na szerokim monitorze lista czatów zjada miejsce, a sam czat zostaje wąski. Te
 
 ## Funkcje
 
-- **Jedno kliknięcie** - cienki uchwyt przyklejony do krawędzi listy chowa i pokazuje kolumnę.
-- **Pełna szerokość** - po schowaniu listy czat zajmuje całe okno, bez pustych pasów.
-- **Trzyma się krawędzi** - pozycja uchwytu liczona na żywo, więc działa też po zmianie rozmiaru okna.
-- **Pamięć stanu** - wybór zapisany między sesjami (`localStorage`).
-- **Autoaktualizacja** - Tampermonkey pobiera nowe wersje wprost z tego repo.
+- Chowa i pokazuje listę czatów kliknięciem uchwytu na krawędzi.
+- Po schowaniu listy czat zajmuje całą szerokość okna.
+- Zapamiętuje stan między sesjami.
+- Aktualizuje się automatycznie z tego repo.
 
 ## Instalacja
 
