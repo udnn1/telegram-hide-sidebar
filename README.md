@@ -8,7 +8,6 @@
 [![Tampermonkey](https://img.shields.io/badge/Tampermonkey-00485B?style=for-the-badge&logo=tampermonkey&logoColor=white)](https://www.tampermonkey.net/)
 [![Telegram Web A](https://img.shields.io/badge/Telegram_Web_A-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://web.telegram.org/a/)
 [![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://www.mozilla.org/firefox/)
-[![Licencja MIT](https://img.shields.io/badge/Licencja-MIT-3DA639?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 
 [Instalacja](#instalacja) · [Użycie](#użycie)
 
@@ -57,7 +56,3 @@ Uchwyt to cienki pionowy pasek wyśrodkowany w pionie. Na najechanie kursorem po
 - ✅ Telegram Web **A** (`web.telegram.org/a/`)
 - ✅ Firefox + Tampermonkey (testowane)
 - ❌ Telegram Web **K** (`web.telegram.org/k/`) - nieobsługiwane
-
-## Licencja
-
-[MIT](LICENSE)
