@@ -4,7 +4,7 @@
 
 **Chowaj listę czatów jednym kliknięciem i czytaj Telegram na pełną szerokość.**
 
-[![Wersja](https://img.shields.io/badge/wersja-3.5.1-3390EC?style=for-the-badge)](https://github.com/udnn1/telegram-hide-sidebar/releases)
+[![Wersja](https://img.shields.io/badge/wersja-3.6.0-3390EC?style=for-the-badge)](https://github.com/udnn1/telegram-hide-sidebar/releases)
 [![Tampermonkey](https://img.shields.io/badge/Tampermonkey-00485B?style=for-the-badge&logo=tampermonkey&logoColor=white)](https://www.tampermonkey.net/)
 [![Telegram Web A](https://img.shields.io/badge/Telegram_Web_A-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://web.telegram.org/a/)
 [![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://www.mozilla.org/firefox/)

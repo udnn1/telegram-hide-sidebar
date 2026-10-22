@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Telegram Web - Hide Sidebar
 // @namespace    https://github.com/udnn1
-// @version      3.5.1
+// @version      3.6.0
 // @description  Chowa liste czatow na Telegram Web A. Uchwyt-zwijacz przyklejony do krawedzi listy.
 // @author       udnn1
 // @match        https://web.telegram.org/*
@@ -18,6 +18,7 @@
 
     const STORAGE_KEY = 'tg_hide_sidebar';
     const CHAT_KEY = 'tg_last_chat';
+    const RESTORE_FLAG = 'tg_restore_at';
     const STYLE_ID = 'tg-hide-sidebar-style';
     const BTN_ID = 'tg-hide-sidebar-handle';
     const CHAT_HASH = /^#-?\d+$/;
@@ -29,7 +30,6 @@
 
     let hidden = localStorage.getItem(STORAGE_KEY) === '1';
     let btn = null;
-    let lastRestore = 0;
 
     function rememberChat() {
         if (CHAT_HASH.test(location.hash)) {
@@ -42,8 +42,9 @@
         if (location.hash !== '' && location.hash !== '#') return;
         const last = localStorage.getItem(CHAT_KEY);
         if (!last) return;
-        if (Date.now() - lastRestore < 2000) return;
-        lastRestore = Date.now();
+        const prev = Number(sessionStorage.getItem(RESTORE_FLAG) || 0);
+        if (Date.now() - prev < 5000) return;
+        sessionStorage.setItem(RESTORE_FLAG, String(Date.now()));
         history.pushState(null, '', '/a/' + last);
         location.reload();
     }
@@ -129,6 +130,7 @@
 
     applyStyle();
     rememberChat();
+    restoreChat();
     const iv = setInterval(() => {
         if (document.body && document.querySelector('#LeftColumn')) {
             clearInterval(iv);
