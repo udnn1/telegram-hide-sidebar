@@ -10,7 +10,7 @@
 [![Telegram Web](https://img.shields.io/badge/Telegram_Web-A-229ED9?style=flat-square&logo=telegram&logoColor=white)](https://web.telegram.org/a/)
 [![Ostatni commit](https://img.shields.io/github/last-commit/udnn1/telegram-hide-sidebar?style=flat-square)](https://github.com/udnn1/telegram-hide-sidebar/commits/main)
 
-[Instalacja](#instalacja) · [Użycie](#użycie) · [Jak to działa](#jak-to-działa) · [FAQ](#faq)
+[Instalacja](#instalacja) · [Użycie](#użycie) · [FAQ](#faq)
 
 </div>
 
@@ -51,28 +51,6 @@ Na szerokim monitorze lista czatów zjada miejsce, a sam czat zostaje wąski. Te
 | `›` | na lewej krawędzi ekranu | pokaż listę |
 
 Uchwyt to cienki pionowy pasek wyśrodkowany w pionie. Na najechanie kursorem podświetla się na niebiesko.
-
-## Jak to działa
-
-<details>
-<summary>Szczegóły techniczne</summary>
-
-<br>
-
-`#Main` w Telegram Web A to kontener **CSS Grid** z dwiema kolumnami: `grid-template-columns: <szerokość listy> <reszta>` (lista | czat).
-
-Naiwne `display: none` na liście nie działa - czat wypada wtedy z siatki i zwija się do zerowej wysokości. Dlatego skrypt zamiast tego nadpisuje definicję siatki:
-
-```css
-#Main { grid-template-columns: 0px 1fr !important; }
-#LeftColumn { visibility: hidden !important; }
-```
-
-Tor listy dostaje zerową szerokość, czat przejmuje całą przestrzeń (`1fr`), pozostając w swoim wierszu - dzięki czemu zachowuje pełną wysokość i poprawnie się renderuje. Lista jest dodatkowo ukrywana przez `visibility: hidden`.
-
-Uchwyt to element `position: fixed`, którego pozycja w stanie pokazanym jest liczona z `getBoundingClientRect()` listy i aktualizowana przez `ResizeObserver`.
-
-</details>
 
 ## Kompatybilność
 
