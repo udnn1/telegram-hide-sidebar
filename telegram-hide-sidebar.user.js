@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Telegram Web - Hide Sidebar
 // @namespace    https://github.com/udnn1
-// @version      3.5.0
+// @version      3.5.1
 // @description  Chowa liste czatow na Telegram Web A. Uchwyt-zwijacz przyklejony do krawedzi listy.
 // @author       udnn1
 // @match        https://web.telegram.org/*
@@ -44,7 +44,8 @@
         if (!last) return;
         if (Date.now() - lastRestore < 2000) return;
         lastRestore = Date.now();
-        location.hash = last;
+        history.pushState(null, '', '/a/' + last);
+        location.reload();
     }
 
     function applyStyle() {
